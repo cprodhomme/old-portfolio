@@ -7,3 +7,7 @@ Portfolio - Clément Prod'homme
 
 ##Lien du site :
 - http://clementprodhomme.com/
+
+##Screenshot
+
+![alt tag](http://clementprodhomme.com/img/portfolio.jpg)

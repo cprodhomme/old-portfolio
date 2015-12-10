@@ -78,7 +78,7 @@ if ($_POST) {
 			<li><a href="#about">A Propos</a></li>
 			<li><a href="#services">Services</a></li>
 			<li><a href="#skills">Compétences</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#portfolio">Mes réalisations</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</div>
@@ -89,7 +89,7 @@ if ($_POST) {
 	<div class="home hero">
 		<div class="overlay"></div>
 		<div class="herowrapper">
-			<h1>Je suis un développeur <b class="rotate color">Full-Stack,Front-End,Back-End</b>.</h1>
+			<h1>Je suis un développeur <b class="color">Full-Stack</b>.</h1>
 			<p>Je recherche un stage de fin d'études de 6 mois à partir de Janvier.</p>
 		</div>
 		<a href="javascript:void(0);" class="scrolldown">
@@ -247,7 +247,7 @@ if ($_POST) {
 
 	<!-- Start Section Divider -->
 	<div class="section divider">
-		<h2 id="servicestitle">Portfolio</h2>
+		<h2 id="servicestitle">Mes réalisations</h2>
 		<a class="scroll" id="portfolio"></a>
 	</div>
 	<!-- End Section Divider -->
@@ -269,55 +269,63 @@ if ($_POST) {
 
 	<ul class="portfolio">
 		<li class="item design">
-			<div class="portfolioitem">
-				<img src="img/portfolio/digit-ice-small.jpg">
-				<div class="portfoliohover">
-					<div class="info">
-						<h1>+</h1>
-						<h5>Digit'Ice</h5>
-						<h6>Intégration</h6>
+			<a href="http://www.digit-ice.com/" target="_blank">
+				<div class="portfolioitem">
+					<img src="img/portfolio/digit-ice-small.jpg">
+					<div class="portfoliohover">
+						<div class="info">
+							<h1>+</h1>
+							<h5>Digit'Ice</h5>
+							<h6>Intégration</h6>
+						</div>
 					</div>
 				</div>
-			</div>
+			</a>
 		</li>
 
 		<li class="item design">
-			<div class="portfolioitem">
-				<img src="img/portfolio/video-small.jpg">
-				<div class="portfoliohover">
-					<div class="info">
-						<h1>+</h1>
-						<h5>Lecteur Vidéo HTML5</h5>
-						<h6>Développement</h6>
+			<a href="https://github.com/cle61/video" target="_blank" rel="nofollow">
+				<div class="portfolioitem">
+					<img src="img/portfolio/video-small.jpg">
+					<div class="portfoliohover">
+						<div class="info">
+							<h1>+</h1>
+							<h5>Lecteur Vidéo HTML5 Custom</h5>
+							<h6>Développement</h6>
+						</div>
 					</div>
 				</div>
-			</div>
+			</a>
 		</li>
 
 		<li class="item design">
-			<div class="portfolioitem">
-				<img src="img/portfolio/creations-je-small.jpg">
-				<div class="portfoliohover">
-					<div class="info">
-						<h1>+</h1>
-						<h5>Créations J&E</h5>
-						<h6>intégration<b class="light-gray"> / </b>Boutique</h6>
+			<a href="http://creations-je.com/" target="_blank">
+				<div class="portfolioitem">
+					<img src="img/portfolio/creations-je-small.jpg">
+					<div class="portfoliohover">
+						<div class="info">
+							<h1>+</h1>
+							<h5>Créations J&E</h5>
+							<h6>intégration<b class="light-gray"> / </b>Boutique</h6>
+						</div>
 					</div>
 				</div>
-			</div>
+			</a>
 		</li>
 
 		<li class="item branding">
-			<div class="portfolioitem">
-				<img src="img/portfolio/climateriaux.jpg">
-				<div class="portfoliohover">
-					<div class="info">
-						<h1>+</h1>
-						<h5>Climatériaux</h5>
-						<h6>Intégration<b class="light-gray"> / </b>Développement</h6>
+			<a href="http://climateriaux.fr" target="_blank">
+				<div class="portfolioitem">
+					<img src="img/portfolio/climateriaux.jpg">
+					<div class="portfoliohover">
+						<div class="info">
+							<h1>+</h1>
+							<h5>Climatériaux</h5>
+							<h6>Intégration<b class="light-gray"> / </b>Développement</h6>
+						</div>
 					</div>
 				</div>
-			</div>
+			</a>
 		</li>
 	</ul>
 
@@ -339,7 +347,7 @@ if ($_POST) {
 		<p class="main dark-gray">Ecrivez moi !</p>
 		<?php if($error != null) { echo '<p>'.$error.'</p>'; } else { echo '<p>'.$success.'</p>'; }?><p></p>
 		<!-- Start Main Paragraph -->
-		<form name="contactform" method="post" action="index.php">
+		<form name="contactform" method="post" action="index.php#contact">
 			<label>Nom</label><br>
 			<input type="text" name="name" value="" class="form" <?php if (!empty($name)) { echo 'value="'.htmlspecialchars($name).'"'; } ?>><br>
 			
@@ -359,7 +367,7 @@ if ($_POST) {
 	<!-- End Content -->
 	
 	<footer class="footer">
-		<a href="http://ninetofive.me"><h6>© Copyright 2014</h6></a>
+		<h6>© Copyright 2015</h6>
 	</footer>
 
 </body>
